@@ -6,3 +6,4 @@
 Кабылбеков Темирлан
 Серебренникова Александра
 
+# AdaptivnyMultiTest_TechnoPark

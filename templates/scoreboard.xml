@@ -4,66 +4,23 @@
          <table border="1" width="100%" cellpadding="5">
            	 <tr>
            	 	 <th>№</th>
-           	 	 <th>Мудрец</th>
+           	 	 <th>Имя</th>
            	 	 <th>Рейтинг</th>
           	 </tr>
-          	 <tr>
-           	 	 <th>1</th>
-           	 	 <th>Буйный Гаалец</th>
-           	 	 <th>212,4</th>
-          	 </tr>
 
-           	 <tr>
-           	 	 <th>2</th>
-           	 	 <th>Подозрительный тип</th>
-           	 	 <th>208</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>3</th>
-           	 	 <th>Тракторист из Челябинска</th>
-           	 	 <th>191</th>
-          	 </tr>
+             <fest:for from="1" to="10" index="i">
+            	 <tr>
+             	 	 <th><fest:value>i</fest:value></th>
+             	 	 <th>Мудрец <fest:space/> <fest:value>i</fest:value> </th>
+             	 	 <th><fest:value>200-i*10</fest:value></th>
+            	 </tr>
+             </fest:for>
 
-           	 <tr>
-           	 	 <th>4</th>
-           	 	 <th>Демон перекрестка</th>
-           	 	 <th>111</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>5</th>
-           	 	 <th>Донатер</th>
-           	 	 <th>100</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>6</th>
-           	 	 <th>Мудрец 6</th>
-           	 	 <th>90</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>7</th>
-           	 	 <th>Мудрец 7</th>
-           	 	 <th>90</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>8</th>
-           	 	 <th>Мудрец 8</th>
-           	 	 <th>100</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>9</th>
-           	 	 <th>Мудрец 9</th>
-           	 	 <th>90</th>
-          	 </tr>
-          	 <tr>
-           	 	 <th>10</th>
-           	 	 <th>Мудрец 10</th>
-           	 	 <th>90</th>
-          	 </tr>
         </table>
      </form>
 
      <div align="center" class="menu">
-         <a href="#"><button class="menu__btn_short" >Back</button></a>
+         <button class="menu__btn_short" id="main" >Back</button>
      </div>
    </div>
 </fest:template>

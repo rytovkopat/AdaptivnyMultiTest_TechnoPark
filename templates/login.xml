@@ -10,7 +10,7 @@
      </form>
 
      <div align="center" class="menu">
-       <a href="#"><button class="menu__btn_short" >Back</button></a>
+       <button class="menu__btn_short" id="main">Back</button>
      </div>
 
     </div>

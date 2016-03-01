@@ -1,4 +1,4 @@
-var require = { //!говорит, что собрать require.js для работы всего
+var require = { //говорит, что собрать require.js для работы всего
     urlArgs: "_=" + (new Date()).getTime(),
     baseUrl: "js",
     paths: {

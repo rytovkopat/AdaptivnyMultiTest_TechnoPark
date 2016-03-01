@@ -1,8 +1,8 @@
 define(
-    ['backbone', 'event'],
-    function (Backbone, event) {
+    ['backbone', 'nav_event'],
+    function (Backbone, nav_event) {
         var View = Backbone.View.extend({
-            template: {},
+            
             initialize: function () {
                 this.render();
             },
@@ -10,13 +10,13 @@ define(
                 this.$el.html(this.template());
             },
             show: function () {
-                $('#page').html(this.el);
+                $('#page').html(this.el); //добавляет обертку div style для шаблонов
                 // Добавляет всем кнопкам вызов события 'navigate'
                 // Внутри события передается id кнопки
-                this.$el.find('button').click(function (e) {
-                    e.preventDefault();
-                    event.trigger('navigate', $(this).attr('id'));
-                });
+                 this.$el.find('button').click(function (e) {
+                     e.preventDefault(); //гасит встроенные обработчики формы 
+                     nav_event.trigger('navigate', $(this).attr('id'));
+                 });
                 this.$el.show();
             },
             hide: function () {
@@ -25,7 +25,6 @@ define(
                 this.$el.off();
             }
         });
-
         return View;
     }
 );

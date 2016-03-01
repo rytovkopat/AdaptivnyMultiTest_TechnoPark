@@ -2,9 +2,12 @@
     font-family: Monospace;
     src: url(FuturicaMedium.ttf);
 }
+
 html, body {
     padding: 0px;
     margin: 0;
+    font-family: Monospace, 'FuturicaMedium';
+
 }
 
 .panel {
@@ -35,7 +38,7 @@ html, body {
   text-align: center;
 }
 
-.question111__title {
+.question__title {
   margin: 10px;
   display: inline-block;
   text-align: center;
@@ -57,6 +60,7 @@ html, body {
   display: inline-block;
   width: 43%;
   min-height: 200px;
+  text-align: center;
 }
 
  .player1, .player2, .player1__nickname, .player2__nickname, .player1__current-score, .player2__current-score {
@@ -138,6 +142,7 @@ html, body {
   color: #ffffff;
   font-size: 24px;
   box-shadow: 0 0 10px rgba(68, 4, 196, 1);
+  font-family: Monospace, 'FuturicaMedium';
 }
 
 .menu__btn_short {

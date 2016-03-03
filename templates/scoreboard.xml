@@ -1,5 +1,5 @@
-<fest:template xmlns:fest="http://fest.mail.ru">
-    <div id="scoreboard" align="center" class="panel"> 
+<?xml version="1.0"?>
+<fest:template xmlns:fest="http://fest.mail.ru" context-name="players">
      <form class="menu">
          <table border="1" width="100%" cellpadding="5">
            	 <tr>
@@ -7,16 +7,23 @@
            	 	 <th>Имя</th>
            	 	 <th>Рейтинг</th>
           	 </tr>
-
-             <fest:for from="1" to="10" index="i">
+            
+             <fest:for iterate="players" index="i" value="p">
             	 <tr>
              	 	 <th><fest:value>i</fest:value></th>
-             	 	 <th>Мудрец <fest:space/> <fest:value>i</fest:value> </th>
-             	 	 <th><fest:value>200-i*10</fest:value></th>
+             	 	 <th>p.nickName <fest:space/> <fest:value>i</fest:value> </th>
+             	 	 <th><fest:value>p.score</fest:value></th>
             	 </tr>
              </fest:for>
+              
+               
+           
 
         </table>
+
+        
+        
+  
      </form>
 
      <div align="center" class="menu">
@@ -24,3 +31,10 @@
      </div>
    </div>
 </fest:template>
+
+
+<!-- <fest:template xmlns:fest="http://fest.mail.ru" context-name="json">
+    <h1>Hello,<fest:space/><fest:value output="text">json.nickName</fest:value></h1>
+
+    
+</fest:template> -->

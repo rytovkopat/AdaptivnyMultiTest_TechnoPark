@@ -125,7 +125,7 @@ h2 {
 
 
 }
-.form-login input[type="email"] , .form-signup input[type="text"] {
+.form-login input[type="email"] , .form-signup input[type="login"]  .form-signup input[type="text"] , {
   margin-left: auto;
   margin-right: auto;
 
@@ -140,6 +140,7 @@ h2 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 
 .form-login__validate-messages, .form-signup__validate-messages, .form-login__validate-messages_hide, .form-signup__validate-messages_hide {
   text-align: center;
